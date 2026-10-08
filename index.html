@@ -210,6 +210,14 @@
   .shop-card .add.added{background:var(--forest);border-color:var(--forest);color:#fff;}
   .shop-note{text-align:center;max-width:560px;margin:48px auto 0;font-size:13.5px;color:#8a857c;font-style:italic;}
   .market{max-width:660px;margin:0 auto;background:var(--vanilla);border:1px solid var(--oat);border-radius:10px;padding:40px 34px;text-align:center;}
+  .pickups{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1040px;margin:0 auto;}
+  .pickup{background:var(--vanilla);border:1px solid var(--oat);border-radius:10px;padding:34px 24px 30px;text-align:center;display:flex;flex-direction:column;align-items:center;}
+  .pickup .market-name{font-size:25px;line-height:1.15;}
+  .pickup .market-addr{margin:6px 0 14px;line-height:1.55;}
+  .pickup .market-note{margin:0 0 24px;}
+  .pickup .btn{margin-top:auto;padding:13px 24px;font-size:12.5px;}
+  .pickup-foot{text-align:center;max-width:560px;margin:26px auto 0;font-size:13.5px;color:#6f6b63;font-style:italic;}
+  @media(max-width:860px){ .pickups{grid-template-columns:1fr;max-width:440px;} }
   .market-tag{font-family:'Work Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--persimmon);margin-bottom:12px;}
   .market-name{font-family:'Fraunces',serif;font-weight:500;font-size:30px;margin:0 0 6px;}
   .market-addr{font-size:14px;color:#54514b;margin-bottom:28px;letter-spacing:.02em;}
@@ -331,7 +339,7 @@
           <h1>Delegate the prep;<span class="l2">own the moment.</span></h1>
           <p class="lead">We finish the first fifteen minutes of any recipe &mdash; onion, carrot, celery brought to translucence in olive oil and sea salt, pre-portioned and frozen at peak. You build from a foundation of craft, even on hour ten of a long day.</p>
           <div class="hero-cta">
-            <a class="btn" data-go="shop">Find us at the market</a>
+            <a class="btn" data-go="shop">Where to find us</a>
             <a class="btn ghost" href="#how">See how it works</a>
           </div>
         </div>
@@ -427,8 +435,39 @@
     <div class="wrap">
       <div class="shead reveal">
         <p class="eyebrow">Find Us</p>
+        <h2>Pick up Maillard at <span class="ital">three locations.</span></h2>
+        <p>In the freezer case at two local shops, and by arrangement at the kitchen where every batch is made. Online ordering is on its way.</p>
+      </div>
+
+      <div class="pickups">
+        <div class="pickup reveal">
+          <div class="market-tag">Local shop</div>
+          <h3 class="market-name">Medford Seafood Market</h3>
+          <p class="market-addr">560 Stokes Road<br>Medford, NJ 08055</p>
+          <p class="market-note">In the freezer case, ready to take home.</p>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Medford+Seafood+Market+560+Stokes+Road+Medford+NJ+08055" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="pickup reveal">
+          <div class="market-tag">Farm market</div>
+          <h3 class="market-name">Springdale Farms</h3>
+          <p class="market-addr">1638 Springdale Road<br>Cherry Hill, NJ 08003</p>
+          <p class="market-note">In the freezer case at the farm market.</p>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Springdale+Farms+1638+Springdale+Road+Cherry+Hill+NJ+08003" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="pickup reveal">
+          <div class="market-tag">Our kitchen</div>
+          <h3 class="market-name">Foodie Hall</h3>
+          <p class="market-addr">1931 Olney Avenue, Suite 200<br>Cherry Hill, NJ 08003</p>
+          <p class="market-note">Pickup is by arrangement. <a href="sms:+16095352269" style="white-space:nowrap;">Text 609-535-2269</a> to set a time.</p>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Foodie+Hall+1931+Olney+Avenue+Cherry+Hill+NJ+08003" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <p class="pickup-foot reveal">Store hours and shelf prices are set by each shop.</p>
+
+      <div class="shead reveal" style="margin-top:84px;">
+        <p class="eyebrow">At the market</p>
         <h2>Meet us at <span class="ital">the market.</span></h2>
-        <p>Online ordering is on its way. For now, the best way to get Maillard &mdash; and to say hello &mdash; is in person.</p>
+        <p>The best way to say hello is still in person.</p>
       </div>
 
       <div class="market reveal">
